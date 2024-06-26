@@ -83,7 +83,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -131,8 +131,8 @@ async def next_page(bot, query):
 
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("◀️ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f"📃 {math.ceil((offset) / 8) + 1} / {math.ceil(total / 8)}",
+            [InlineKeyboardButton("⏪ 𝑷𝒓𝒆𝒗𝒊𝒐𝒖𝒔", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📖 𝑷𝒂𝒈𝒆𝒔 {math.ceil((offset) / 8) + 1} / {math.ceil(total / 8)}",
                                   callback_data="pages")]
         )
         btn.append(
@@ -252,7 +252,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -373,7 +373,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -475,7 +475,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -583,7 +583,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -697,7 +697,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1311,7 +1311,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] ⊳ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"《{get_size(file.file_size)}》{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1356,10 +1356,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         offset = 0    
         
-    if offset== 0:
-        btn.append(
-            [InlineKeyboardButton(text="📖 𝑷𝒂𝒈𝒆𝒔 1/1", callback_data="pages")]
-        )
+    if offset== 0:        
         btn.append(
                     [InlineKeyboardButton(text="🎬 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑮𝑹𝑶𝑼𝑷 🎬", url=f"https://t.me/+BYcim_eiF3swMDhl")]
         )
