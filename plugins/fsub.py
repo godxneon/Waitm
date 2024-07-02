@@ -161,8 +161,7 @@ async def send_file(client, query, ident, file_id):
     ok = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
-        caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
+        caption=f_caption,        
         reply_markup=InlineKeyboardMarkup(
                           [
                             [                            
