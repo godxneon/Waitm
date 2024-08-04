@@ -24,8 +24,7 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 
-from aiohttp import web
-from plugins import web_server
+from plugins.web_support import web_server
 from plugins.index import index_files_to_db, incol
 PORT = environ.get("PORT", "8080")
 name = "main"
