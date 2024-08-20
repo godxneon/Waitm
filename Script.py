@@ -17,7 +17,7 @@ class script(object):
     
 𝖢𝗁𝖾𝖼𝗄 𝖡𝖾𝗅𝗈𝗐 𝖧𝖾𝗅𝗉 𝖥𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝗌🤍</b>"""
 
-    ABOUT_TXT = """<b>🤖 𝑴𝒚 𝑵𝒂𝒎𝒆 : {}
+    ABOUT_TXT = """<b>🤖 𝑴𝒚 𝑵𝒂𝒎𝒆 : <a href=https://t.me/{}>{}</a>
     
 📝 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 : <a href='https://t.me/+Ou3rqTttBbJmOTA1'>𝑷𝒚𝒕𝒉𝒐𝒏</a>
 
@@ -97,7 +97,9 @@ class script(object):
 ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇQᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
        
   
-    CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CUSTOM_FILE_CAPTION = """<b>𝐻𝑒𝑙𝑙𝑜 👋 {mention} 😍
+
+{file_name}
     
 ⚙️ Fɪʟᴇ Sɪᴢᴇ :  {file_size}
 
