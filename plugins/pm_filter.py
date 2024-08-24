@@ -46,11 +46,11 @@ NON_IMG = """<b>‼️ FILE NOT FOUND ? ‼️
 4⃣<i>‼ 𝖱𝖾𝗉𝗈𝗋𝗍 𝗍𝗈 𝖺𝖽𝗆𝗂𝗇 ▶ @ARAKAL_THERAVAD_MOVIES_02_bot</b>"""
             
 
-@Client.on_message(filters.private & filters.text & filters.incoming)
-async def pv_filter(client, message):
-    kd = await global_filters(client, message)
-    if kd == False:
-        await auto_filter(client, message)
+@Client.on_message(filters.group & filters.text & filters.incoming)
+async def give_filters(client, message):
+    k = await global_filters(client, message)    
+    if k == False:
+        await auto_filter(client, message)    
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
