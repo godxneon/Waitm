@@ -1529,10 +1529,8 @@ async def advantage_spell_chok(msg):
             photo="https://telegra.ph/file/37af06680cbd13176c536.jpg", 
             caption=NON_IMG.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(btn)
-    )
-    await asyncio.sleep()
-    await spl.delete()
-    await msg.delete()
+    )    
+    #await msg.delete()
     return   
 
 async def global_filters(client, message, text=False):
