@@ -179,7 +179,7 @@ async def send_file(client, query, ident, file_id):
                     )
     )
     replied = ok.id    
-    da = await message.reply(DELETE_TXT, reply_to_message_id=replied)
+    da = await query.reply(DELETE_TXT, reply_to_message_id=replied)
     await asyncio.sleep(30)
     await message.delete()    
     await da.delete()
